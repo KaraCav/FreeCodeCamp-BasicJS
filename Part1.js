@@ -22,3 +22,17 @@ while (i < 5);
 // It should check if name is an actual contact's firstName and the given property (prop) is a property of that contact.
 // If both are true, return the "value" of the property. If it doesn't correspond to any contacts return "No such contact"
 // If prop does not correspond to any valid properties of a contact found to match name then return "No such property"
+function lookUpProfile(name, prop){
+  for(let i= 0; i <= contacts.length-1; i++){
+    if(contacts[i].firstName === name){
+        if(contacts[i].hasOwnProperty(prop)){
+                    console.log(contacts[i][prop]);
+             return contacts[i][prop];
+        }
+        else{
+            return "No such property";
+        }
+    }
+  }
+    return "No such contact";
+}
