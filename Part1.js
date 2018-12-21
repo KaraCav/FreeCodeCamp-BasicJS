@@ -36,3 +36,13 @@ function lookUpProfile(name, prop){
   }
     return "No such contact";
 }
+// NUMBERS 4 - 6:
+// ParseInt() turns a string into an interger, second number is base:
+  function convertToInteger(str) {
+    return parseInt(str, 2); }
+// Ternary
+  function checkEqual(a, b) {
+   return a === b ? true : false; }
+// Multiple Ternaries
+  function checkSign(num) {
+   return num === 0 ? "zero" : num > 0 ? "positive" : "negative"; }
